@@ -1,0 +1,18 @@
+COUNTED WORD, NUMBER OF WORDS IS {{count}}
+<br/>
+<br/>
+<a href= "{% url 'home' %}">back to home page<a/>
+<br/>
+<br/>
+<br/> <h1>YOUR TEXT:</h1>
+{{fulltext}}
+
+<h1>COUNTED WORDS<h1/>
+
+{% for word, conttotal in sortedwards %}
+<br/>
+{{word}}-{{conttotal}}
+<br/>
+
+
+{% endfor %}

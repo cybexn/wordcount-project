@@ -1,0 +1,9 @@
+<h1>THIS IS HTML FAM</h1>
+<a href = "{% url 'about' %}">go to about page<a/>
+<br/>
+<br/>
+<form action="{% url 'count' %}">
+  <textarea cols="30" rows="2" name="fulltext"></textarea>
+  <br />
+  <input type="submit" value="Count"></input>
+</form>
